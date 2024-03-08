@@ -1,0 +1,25 @@
+.container-fuild{
+  background-color: whitesmoke;
+  
+}
+
+#screen{
+  position: absolute;
+  top: 200px;
+  margin-left: 500px;
+}
+  
+  /* Media query for smaller screens (e.g., tablets) */
+  @media (max-width: 991px) {
+    #screen {
+        position: absolute;
+    }
+  }
+  
+  /* Media query for even smaller screens (e.g., phones) */
+  @media (max-width: 767px) {
+    #screen {
+        position: absolute;
+    }
+  }
+  
