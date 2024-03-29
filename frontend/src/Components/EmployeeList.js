@@ -79,7 +79,7 @@ const EmployeeList = () => {
                   </Link>
                 </div>
                 <div className='col-lg-5'>
-                  <h4 className='text-center'>Total No. of Employee : 10</h4>
+                  <h4 className='text-center'>Total No. of Employee : {empdata.length}</h4>
                 </div>
                 <div className='col-lg-4'>
                   <div className="input-group mb-3">

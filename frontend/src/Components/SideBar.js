@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 
@@ -50,36 +50,36 @@ const SideBar = ({ isSidebarOpen }) => {
                         </a>
                     </li>
                     {
-                        !user?.user.adminname &&<li className="nav-item">
-                        <a className="nav-link">
-                            <Link to='/'>
-                                <i className="ti-lock menu-icon"></i>
-                                <span className="menu-title">Admin Login</span>
-                            </Link>
-                        </a>
-                    </li>
+                        !user?.user.adminname && <li className="nav-item">
+                            <a className="nav-link">
+                                <Link to='/'>
+                                    <i className="ti-lock menu-icon"></i>
+                                    <span className="menu-title">Admin Login</span>
+                                </Link>
+                            </a>
+                        </li>
                     }
                     {
-                        !user?.user.adminname &&<li className="nav-item">
-                        <a className="nav-link">
-                            <Link to='/adminregister'>
-                                <i className="ti-id-badge menu-icon"></i>
-                                <span className="menu-title">Admin Registration</span>
-                            </Link>
-                        </a>
-                    </li>
+                        !user?.user.adminname && <li className="nav-item">
+                            <a className="nav-link">
+                                <Link to='/adminregister'>
+                                    <i className="ti-id-badge menu-icon"></i>
+                                    <span className="menu-title">Admin Registration</span>
+                                </Link>
+                            </a>
+                        </li>
                     }
                     {
-                        user?.user.adminname &&<li className="nav-item">
-                        <a className="nav-link">
-                            <Link>
-                                <i className="ti-power-off menu-icon"></i>
-                                <span className="menu-title" onClick={Logout}>LogOut</span>
-                            </Link>
-                        </a>
-                    </li>
+                        user?.user.adminname && <li className="nav-item">
+                            <a className="nav-link">
+                                <Link>
+                                    <i className="ti-power-off menu-icon"></i>
+                                    <span className="menu-title" onClick={Logout}>LogOut</span>
+                                </Link>
+                            </a>
+                        </li>
                     }
-                    
+
                 </ul>
             </nav>
         </div>
